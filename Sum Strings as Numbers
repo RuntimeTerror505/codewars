@@ -1,0 +1,19 @@
+function sumStrings(a,b) { 
+
+  let mas = [a,b];
+  let sum = 0;
+  
+  if (a !== '' && b!== ''){
+  sum = parseInt(mas[0])+parseInt(mas[1]); 
+  }
+  
+ else if (b === ''){
+    return a
+  }
+  
+  else if (a === ''){
+    return b
+  }
+  
+  return sum +'';
+}

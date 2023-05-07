@@ -1,0 +1,31 @@
+function isValidWalk(walk) {
+  let x = 0;
+  let y = 0;
+  
+  if (walk.length !== 10){
+    return false;
+}
+  else{
+    for (let i = 0; i < walk.length; i++){
+    if (walk[i] === 'n'){
+      x++
+    }
+    else if (walk[i] === 's'){
+      x--
+    }
+    else if (walk[i] === 'w'){
+      y--
+    }
+    else if (walk[i] === 'e') {
+      y++
+    }
+  }
+  if (x !== 0  || y !== 0){
+    return false;
+  }
+  else {
+    return true;
+  }
+}
+  }
+  

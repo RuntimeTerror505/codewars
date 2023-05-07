@@ -1,0 +1,19 @@
+function spinWords(string){
+    
+    //splits string into words separated by a space
+    let splitStringArray = string.split(" ");
+    
+    for (let i = 0; i < splitStringArray.length; i++) {
+    //if the word is more than 5 chars, reverse the word
+     if (splitStringArray[i].length >= 5) {
+           splitStringArray[i]=splitStringArray[i].split("").reverse().join("");
+     }
+    
+    } //end for loop
+    
+    //join the modified array
+    let joinString = splitStringArray.join(" ");
+    
+    return joinString;
+    
+    } //end function

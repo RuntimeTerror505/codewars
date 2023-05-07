@@ -1,0 +1,17 @@
+function sc(screws){
+  let seconds = 0;
+  for (let i = 0 ; i < screws.length; i++){
+    
+    seconds++
+    
+    if(i > 0 && screws[i] === screws[i-1]){
+      seconds = seconds + 1
+    }
+    else if(i > 0 && screws[i] !== screws[i-1]){
+      seconds = seconds + 6
+    }
+    else {
+      continue
+    }
+  }
+  return seconds;

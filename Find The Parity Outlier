@@ -1,0 +1,30 @@
+function findOutlier(integers){
+  
+  let mas = integers;
+  
+  let odd = [];
+  let even = [];
+  
+  let oddCount = 0;
+  let evenCount = 0;
+
+  
+  for(let i = 0; i < integers.length; i++){
+    if (mas[i] % 2 === 0){
+      even.push(mas[i]);
+      evenCount++
+    }
+    else {
+      odd.push(mas[i])
+      oddCount++
+    }
+  }
+  
+  if(oddCount < evenCount){
+    return odd[0];
+  }
+  else {
+    return even[0];
+  }
+  
+  

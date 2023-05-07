@@ -1,0 +1,10 @@
+const areaOrPerimeter = function(l , w) {
+  let sum = 0 ;
+  if (l === w){
+    sum = l * w;
+  }
+  else {
+    sum = (l+w)*2;
+  }
+  return sum;
+};

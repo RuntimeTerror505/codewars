@@ -1,0 +1,5 @@
+function animal(obj){
+  
+  let string = `This ${obj.color} ${obj.name} has ${obj.legs} legs.` 
+  return string
+}

@@ -1,0 +1,15 @@
+function moveZeros(arr) {
+   const resultArr = [];
+   let index = 0;
+  
+   for(let i = 0; i < arr.length; i++){
+      if(arr[i] === 0){
+         resultArr.push(0);
+      }else{
+         resultArr.splice(index, 0, arr[i]);
+         index++;
+      };
+   };
+  
+   return resultArr;
+};

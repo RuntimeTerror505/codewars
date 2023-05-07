@@ -1,0 +1,8 @@
+function boolToWord( enter ){
+  if ( enter != 0 ){
+    return 'Yes'
+  }
+  else {
+    return 'No'
+  }
+}

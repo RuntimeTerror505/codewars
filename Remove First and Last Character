@@ -1,0 +1,6 @@
+function removeChar(str){
+ 
+  let word = str.slice(1, -1);
+  return word
+
+};

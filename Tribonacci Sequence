@@ -1,0 +1,12 @@
+function tribonacci(signature,n){
+  let mas = [];
+  for (let i = 0; i < n ; i++){
+    if (i < 3){
+      mas.push(signature[i]);
+    }
+    else if (i >= 3){
+      mas.push(mas[i-3]+mas[i-2]+mas[i-1])
+    }
+  }
+  return mas;
+}

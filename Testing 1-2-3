@@ -1,0 +1,8 @@
+var number=function(array){
+  let mas = [];
+  for (let i = 1; i < array.length+1; i++){
+    mas.push(`${i}: ${array[i-1]}`);
+    
+  }
+  return mas;
+}
